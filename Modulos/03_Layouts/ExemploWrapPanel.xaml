@@ -1,0 +1,48 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._03_Layouts.ExemploWrapPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._03_Layouts"
+        mc:Ignorable="d"
+        Title="Exemplo Wrap Panel" Height="450" Width="800">
+    <StackPanel Margin="10">
+        
+        <WrapPanel>
+            <StackPanel Width="350" Margin="0,0,20,20">
+                <TextBlock>Nome</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Width="350" Margin="0,0,20,20">
+                <TextBlock>CPF</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Width="350" Margin="0,0,20,20">
+                <TextBlock>Telefone</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Width="350" Margin="0,0,20,20">
+                <TextBlock>Endereço</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel Width="350" Margin="0,0,20,0">
+                <TextBlock>Data de Nascimento</TextBlock>
+                <DatePicker></DatePicker>
+            </StackPanel>
+            <StackPanel Width="350" Margin="0,0,20,0">
+                <TextBlock>Tags Cliente</TextBlock>
+                <WrapPanel>
+                    <Border Background="LightGray" CornerRadius="8" Padding="8,4" Margin="10,0,0,0">
+                        <TextBlock>Tag 1</TextBlock>
+                    </Border>
+                    <Border Background="LightGray" CornerRadius="8" Padding="8,4" Margin="10,0,0,0">
+                        <TextBlock>Tag 2</TextBlock>
+                    </Border>
+                    <Border Background="LightGray" CornerRadius="8" Padding="8,4" Margin="10,0,0,0">
+                        <TextBlock>Tag 3</TextBlock>
+                    </Border>
+                </WrapPanel>
+            </StackPanel>
+        </WrapPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Application x:Class="Everis.HandsOnWpf.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Everis.HandsOnWpf"
+             xmlns:di="clr-namespace:Everis.HandsOnWpf.Modulos._11_InjecaoDependencia.Kernel"
+             xmlns:clr="clr-namespace:System;assembly=mscorlib"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MinhaBibliotecaExterna;component/Themes/Generic.xaml"></ResourceDictionary>
+                <ResourceDictionary>
+                    <di:ViewModelLocator x:Key="ViewModelLocator"></di:ViewModelLocator>
+                    <SolidColorBrush x:Key="CorPrimaria" Color="Blue"></SolidColorBrush>
+                    <SolidColorBrush x:Key="CorSecundaria" Color="AliceBlue"></SolidColorBrush>
+                    <SolidColorBrush x:Key="CorWarning" Color="Orange"></SolidColorBrush>
+                    <SolidColorBrush x:Key="CorErro" Color="Red"></SolidColorBrush>
+                    <SolidColorBrush x:Key="CorEscrita" Color="#333333"></SolidColorBrush>
+                    <SolidColorBrush x:Key="CorAlternativa" Color="Purple"></SolidColorBrush>
+                    <clr:Double x:Key="FontePequena">12</clr:Double>
+                    <clr:Double x:Key="FonteMedia">16</clr:Double>
+                    <clr:Double x:Key="FonteGrande">24</clr:Double>
+                    <clr:Double x:Key="FonteEnorme">32</clr:Double>
+                    
+                    
+                    <Style TargetType="TextBlock" x:Key="GlobalText">
+                        <Setter Property="Foreground" Value="{StaticResource CorWarning}"></Setter>
+                    </Style>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>    
+        </ResourceDictionary>
+        
+        
+    </Application.Resources>
+</Application>

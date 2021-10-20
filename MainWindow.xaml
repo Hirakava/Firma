@@ -1,0 +1,57 @@
+﻿<Window x:Class="Everis.HandsOnWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Padding="10">
+    <DockPanel Margin="10">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Introdução">
+                <MenuItem Header="Introdução Páginas" Click="IntroducaoPaginasClick"></MenuItem>
+                <MenuItem Header="Introdução Dialog" Click="IntroducaoJanelaDialogoClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Estrutura Básica" Click="EstruturaBasicaClick"></MenuItem>
+
+            <MenuItem Header="Layouts">
+                <MenuItem Header="Exemplo Grid" Click="ExemploGridClick"></MenuItem>
+                <MenuItem Header="Exemplo Stack Panel" Click="ExemploStackPanelClick"></MenuItem>
+                <MenuItem Header="Exemplo Wrap Panel" Click="ExemploWrapPanelClick"></MenuItem>
+                <MenuItem Header="Exemplo Dock Panel" Click="ExemploDockPanelClick"></MenuItem>
+                <MenuItem Header="Exemplo Canvas" Click="ExemploCanvasClick"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Exemplo Junção" Click="ExemploJuncaoClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Formulários">
+                <MenuItem Header="Exemplo Formulário" Click="ExemploFormularioClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Eventos">
+                <MenuItem Header="Exemplo Eventos" Click="ExemploEventosClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Formatacao">
+                <MenuItem Header="Exemplo Formatação" Click="ExemploFormatacaoClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Binding">
+                <MenuItem Header="Exemplo Binding" Click="ExemploBindingClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="MVVM">
+                <MenuItem Header="Exemplo MVVM" Click="ExemploMVVMClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Injeção de Dependência">
+                <MenuItem Header="Exemplo Injeção de Dependência" Click="ExemploInjecaoDependenciaClick"></MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Estruturas Repetição">
+                <MenuItem Header="Exemplo Data Grid" Click="ExemploDataGridClick"></MenuItem>
+                <MenuItem Header="Exemplo ListView" Click="ExemploListViewClick"></MenuItem>
+                <MenuItem Header="Exemplo Items Control" Click="ExemploItemsControlClick"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Templates">
+                <MenuItem Header="Exemplo Data Template" Click="ExemploDataTemplateClick"></MenuItem>
+                <MenuItem Header="Exemplo Control Template" Click="ExemploControlTemplateClick"></MenuItem>
+            </MenuItem>
+        </Menu>
+        
+    </DockPanel>
+</Window>

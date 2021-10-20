@@ -1,0 +1,58 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._03_Layouts.ExemploJuncao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._03_Layouts"
+        mc:Ignorable="d"
+        Title="ExemploJuncao" Height="450" Width="820">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Arquivo">
+                <MenuItem Header="Sair"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Background="#f1f4f7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="225"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GridSplitter Grid.Column="0" Width="5" ResizeDirection="Columns"></GridSplitter>
+            <Border BorderBrush="#C1c4c7" BorderThickness="0,0,1,0">
+                <StackPanel Background="White">
+                    <TextBlock>Cliente 1</TextBlock>
+                    <TextBlock>Cliente 2</TextBlock>
+                    <TextBlock>Cliente 3</TextBlock>
+                    <TextBlock>Cliente 4</TextBlock>
+                    <TextBlock>Cliente 5</TextBlock>
+                </StackPanel>
+            </Border>
+            <WrapPanel Grid.Column="1" Margin="10">
+                <StackPanel Width="250" Margin="10">
+                    <TextBlock>Id Cliente</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+
+                <StackPanel Width="250" Margin="10">
+                    <TextBlock>Nome Cliente</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+
+                <StackPanel Width="250" Margin="10">
+                    <TextBlock>Telefone</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+
+                <StackPanel Width="250" Margin="10">
+                    <TextBlock>Endereço</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+
+                <StackPanel Width="250" Margin="10">
+                    <TextBlock>Id Cliente</TextBlock>
+                    <TextBox></TextBox>
+                </StackPanel>
+            </WrapPanel>
+        </Grid>
+    </DockPanel>
+</Window>

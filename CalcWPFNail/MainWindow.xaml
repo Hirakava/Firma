@@ -1,0 +1,63 @@
+﻿<Window x:Class="CalcWPFNail.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcWPFNail"
+        mc:Ignorable="d"
+        Title="Calculadora WPF Nail" Height="450" Width="650" ResizeMode="NoResize">
+    <!--<StackPanel Margin="8">-->
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Margin="3,3,0,3" Grid.ColumnSpan="4" Name="txtDisplay" Text="{Binding Path=Valor, Mode=OneWay}" IsReadOnly="True" ></TextBox>
+
+        <Button Grid.Row="1" Grid.Column="0" Margin="3" Click="OperBtn_Click" Name="Bce" Background="Darkgray">CE</Button>
+        <Button Grid.Row="1" Grid.Column="1" Margin="3" Click="OperBtn_Click" Name="BMemClear" Background="Darkgray">MRC</Button>
+        <Button Grid.Row="1" Grid.Column="2" Margin="3" Click="OperBtn_Click" Name="btn_mMenos" Background="Darkgray">M -</Button>
+        <Button Grid.Row="1" Grid.Column="3" Margin="3" Click="OperBtn_Click" Name="BMemPlus" Background="Darkgray">M +</Button>
+
+        <Button Grid.Row="2" Grid.Column="0" Margin="3" Click="OperBtn_Click" Name="btn_off" Background="Darkgray">OFF</Button>
+        <Button Grid.Row="2" Grid.Column="1" Margin="3" Click="OperBtn_Click" Name="BSqrt" Background="Darkgray">√</Button>
+        <Button Grid.Row="2" Grid.Column="2" Margin="3" Click="OperBtn_Click" Name="BPercent" Background="Darkgray">%</Button>
+        <Button Grid.Row="2" Grid.Column="3" Margin="3" Click="OperBtn_Click" Name="BDevide" Background="Darkgray">/</Button>
+
+        <Button Grid.Row="3" Grid.Column="0" Margin="3" Click="Button_Click" Name="btn_numSete" Background="YellowGreen">7</Button>
+        <Button Grid.Row="3" Grid.Column="1" Margin="3" Click="Button_Click" Name="btn_numOito" Background="YellowGreen">8</Button>
+        <Button Grid.Row="3" Grid.Column="2" Margin="3" Click="Button_Click" Name="btn_numNove" Background="YellowGreen">9</Button>
+        <Button Grid.Row="3" Grid.Column="3" Margin="3" Click="OperBtn_Click" Name="BMultiply" Background="Darkgray">X</Button>
+
+        <Button Grid.Row="4" Grid.Column="0" Margin="3" Click="Button_Click" Name="btn_numQuatro" Background="YellowGreen">4</Button>
+        <Button Grid.Row="4" Grid.Column="1" Margin="3" Click="Button_Click" Name="btn_numCinco" Background="YellowGreen">5</Button>
+        <Button Grid.Row="4" Grid.Column="2" Margin="3" Click="Button_Click" Name="btn_numSeis" Background="YellowGreen">6</Button>
+        <Button Grid.Row="4" Grid.Column="3" Margin="3" Click="OperBtn_Click" Name="BMinus" Background="Darkgray">-</Button>
+
+        <Button Grid.Row="5" Grid.Column="0" Margin="3" Click="Button_Click"  Name="btn_numUm" Background="YellowGreen">1</Button>
+        <Button Grid.Row="5" Grid.Column="1" Margin="3" Click="Button_Click"  Name="btn_numDois" Background="YellowGreen">2</Button>
+        <Button Grid.Row="5" Grid.Column="2" Margin="3" Click="Button_Click"  Name="btn_numTres" Background="YellowGreen">3</Button>
+        
+        <Button Grid.Row="5" Grid.Column="3" Grid.RowSpan="2" Margin="3" Click="OperBtn_Click"  Name="BPlus" Background="Darkgray">+</Button>
+
+
+        <Button Grid.Row="6" Grid.Column="1" Margin="3" Click="Button_Click" Name="btn_numZero" Background="YellowGreen">0</Button>
+        <Button Grid.Row="6" Grid.Column="0" Margin="3" Click="Button_Click" Name="btn_ponto" Background="Darkgray">.</Button>
+        <Button Grid.Row="6" Grid.Column="2" Margin="3" Click="OperBtn_Click" Name="BEqual" Background="Darkgray">=</Button>
+
+    </Grid>
+    <!--</StackPanel>-->
+</Window>

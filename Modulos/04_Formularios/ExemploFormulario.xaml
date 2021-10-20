@@ -1,0 +1,44 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._04_Formularios.ExemploFormulario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._04_Formularios"
+        mc:Ignorable="d"
+        Title="ExemploFormulario" Height="450" Width="800">
+    <StackPanel Margin="16">
+        <Label>Nome</Label>
+        <TextBox></TextBox>
+
+        <Label>Estado Civil</Label>
+        <ComboBox>
+            <ComboBoxItem></ComboBoxItem>
+            <ComboBoxItem>Solteiro</ComboBoxItem>
+            <ComboBoxItem>União estável</ComboBoxItem>
+            <ComboBoxItem>Casado</ComboBoxItem>
+            <ComboBoxItem>Divorciado</ComboBoxItem>
+            <ComboBoxItem>Viúvo</ComboBoxItem>
+        </ComboBox>
+
+        <Label>Data Nascimento</Label>
+        <DatePicker ></DatePicker>
+
+        <Label>Renda Familiar</Label>
+        <Slider Minimum="0" Maximum="50000" TickFrequency="100"></Slider>
+
+        <Label>Conquistas na vida</Label>
+        <StackPanel>
+            <CheckBox>Faculdade</CheckBox>
+            <CheckBox>Carro</CheckBox>
+            <CheckBox>Casa</CheckBox>
+            <CheckBox>Casamento</CheckBox>
+            <CheckBox>Filhos</CheckBox>
+        </StackPanel>
+        <Label>Genero</Label>
+        <StackPanel>
+            <RadioButton GroupName="genero" IsChecked="True">Masculino</RadioButton>
+            <RadioButton GroupName="genero">Feminino</RadioButton>
+            <RadioButton GroupName="genero">Outro</RadioButton>
+        </StackPanel>
+    </StackPanel>
+</Window>

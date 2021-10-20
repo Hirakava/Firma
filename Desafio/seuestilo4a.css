@@ -1,0 +1,8 @@
+#containter{
+    max-width: 100%;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}

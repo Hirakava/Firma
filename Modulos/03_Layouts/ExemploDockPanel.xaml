@@ -1,0 +1,40 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._03_Layouts.ExemploDockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._03_Layouts"
+        mc:Ignorable="d"
+        Title="Exemplo Dock Panel" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Arquivo">
+                <MenuItem Header="Sair"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <DockPanel DockPanel.Dock="Left" Width="200">
+            <StackPanel Margin="10">
+                <TextBlock Margin="10">Cliente 1</TextBlock>
+                <TextBlock Margin="10">Cliente 2</TextBlock>
+                <TextBlock Margin="10">Cliente 3</TextBlock>
+            </StackPanel>
+        </DockPanel>
+        <Border Background="#f1f4f7" BorderThickness="1,0,0,0" BorderBrush="#c1c4c7">
+            <DockPanel>
+                <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+                    <Button Margin="5" Width="100">Salvar</Button>
+                    <Button Margin="5" Width="100">Apagar</Button>
+                </WrapPanel>
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <Label>Id Cliente</Label>
+                        <TextBox></TextBox>
+
+                        <Label>Nome</Label>
+                        <TextBox></TextBox>
+                    </StackPanel>
+                </ScrollViewer>
+            </DockPanel>
+        </Border>
+    </DockPanel>
+</Window>

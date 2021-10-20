@@ -1,0 +1,26 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._08_EstruturasRepeticao.ExemploDataGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._08_EstruturasRepeticao"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+        Title="ExemploDataGrid" Height="450" Width="800">
+    
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Margin="10">
+            <TextBlock>Id</TextBlock>
+            <TextBox Text="{Binding DadoDataGrid.ID}"></TextBox>
+
+            <TextBlock>Nome</TextBlock>
+            <TextBox Text="{Binding DadoDataGrid.Nome}"></TextBox>
+
+            <TextBlock>Telefone</TextBlock>
+            <TextBox Text="{Binding DadoDataGrid.Telefone}"></TextBox>
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding Path=DadosDataGrid}" SelectedItem="{Binding DadoDataGrid}" HorizontalGridLinesBrush="#c1c4c7" VerticalGridLinesBrush="#c1c4c7">
+            
+        </DataGrid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,35 @@
+<html>
+    <head>Desafio 4 - B</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1">
+    <link rel="stylesheet" href="seuestilo4b.css" type="text/css">
+        <!---Import JQuery--->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>  
+
+        <script>
+            $(function (){
+                $('.nav').hide();
+                $('.menu-btn').click(function (){
+                    $('.nav').toggle(300);
+                });
+                $('.sub-menu').hide();
+                $('.nav li.expand').click(function (){
+                    $('.sub-menu').toggle(300);
+                });
+            });
+        </script>
+        <header>
+            <div class="wrap">
+                <a href=""> Your Logo </a>
+                <button class="menu-btn"><img src="BtnMenu.png" alt="Menu" width="30px" height="30px"></button>
+            </div>
+                <ul class="nav">
+                    <li><a href="">Menu 1</a></li>
+                    <li><a href="">Menu 2</a></li>
+                    <li><a href="">Menu 3</a></li>
+                    <li><a href="">Menu 4</a></li>
+                </ul>
+        </header>
+        <body>            
+        </body>
+</html>

@@ -1,0 +1,51 @@
+.container {
+    max-width: 1000px;
+    
+    
+}
+
+.header{   
+    background: silver;  
+    padding: 40px;
+      
+    
+    
+}
+
+.nav{
+    background: blue;   
+    margin-top: 5px;
+    padding: 30px;
+
+   }
+
+.article{    
+    background: lightgray;
+    max-width: 650px;
+    margin-top: 5px;
+    grid-area: auto;
+   
+}
+
+.aside{
+    background: lightgray;
+    max-width: 250px;    
+   
+} 
+
+.footer{    
+    background: silver;     
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.header>.nav>.aside>.footer{
+text-align:left;
+border: 1px solid #ccc;
+padding: 40px;
+border: white 5px;
+
+
+}
+
+@media (max-width: 600px)

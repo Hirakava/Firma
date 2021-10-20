@@ -1,0 +1,16 @@
+﻿<Window x:Class="Everis.HandsOnWpf.Modulos._01_Introducao.ExemploDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Everis.HandsOnWpf.Modulos._01_Introducao"
+        mc:Ignorable="d"
+        Title="Meu Dialogo" Height="120" Width="300">
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Right">
+            <Button Margin="5" Width="75">Cancelar</Button>
+            <Button Margin="5" Width="75">Ok</Button>
+        </WrapPanel>
+        <TextBlock>Mensagem customizada</TextBlock>
+    </DockPanel>
+</Window>
